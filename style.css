@@ -1,0 +1,175 @@
+/* --- ESTILOS GENERALES --- */
+body {
+    background-color: #f4f8fb; /* este background-color es color de fondo */
+    font-family: Arial, sans-serif; /* aqui le pones el tipo de letra */
+}
+
+/* --- EL TECHO DE LA PAGINA --- */
+header {
+    background-color: #061320; /* este es el color azul oscuro del techo */
+    padding: 20px; /* con esto se le da espacio para que no toque los bordes */
+    text-align: center; /* esto mueve el texto al centro */
+}
+
+header h1 {
+    color: #ffffff; /* color de la letra del titulo principal */
+}
+
+/* --- EL MENU DE ENLACES --- */
+nav {
+    background-color: #10a9f6; /* fondo celeste para el menu */
+    padding: 15px; /* espacio por dentro para que se vea gordito */
+    text-align: center; /* esto mueve el texto al centro */
+}
+
+nav a {
+    color: #ffffff; /* color de los enlaces */
+    text-decoration: none; /* le quita la linea de subrayado */
+    font-weight: bold; /* la pone como en negrilla */
+    font-size: 18px; /* tamaño de la letra */
+    margin: 0 10px; /* con esto le damos espacio a los lados para que no esten pegados */
+}
+
+nav a:hover {
+    color: #003366; /* con este le damos animacion para cuando pase el cursor cambie de color */
+}
+
+/* --- LAS CAJAS BLANCAS --- */
+.caja-contenido {
+    background-color: #ffffff; /* Pintamos la caja de color blanco puro */
+    padding: 20px; /* para que el texto no toque la orilla por dentro */
+    margin: 20px; /* con este es para que no pegue con otras cajas por fuera */
+    border-radius: 15px; /* aqui se redondea las esquinas */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* con este le agregamos sombra a las cajas */
+}
+
+/* --- ESTILOS DEL BANNER (PAGINA INICIO) --- */
+img[alt="Banner de tecnología"] {
+    width: 100%; /* para que la foto ocupe toda la pantalla a lo ancho */
+    height: 350px; /* la altura del banner */
+    object-fit: cover; /* esto es para que la foto no se estire feo ni se deforme */
+}
+
+/* --- ESTILOS DEL ALBUM DESTACADOS (PAGINA INICIO) --- */
+.album {
+    text-align: center; /* esto mueve las fotos al centro */
+    padding: 10px;
+}
+
+.caja-foto {
+    display: inline-block; /* esto pone las fotos una al lado de la otra en linea */
+    margin: 15px; /* separacion entre los cuadritos */
+    background-color: #e6f2ff; /* un fondito azul claro */
+    padding: 10px;
+    border-radius: 10px; /* aqui se redondea las esquinas de los cuadritos */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* con este le agregamos una sombra suave */
+    transition: 0.3s; /* esto es para que el efecto de mover sea suave */
+}
+
+.caja-foto:hover {
+    transform: scale(1.05); /* esto hace que la foto crezca un poquito al pasar el raton */
+}
+
+.caja-foto img {
+    width: 200px; /* ancho de las fotos de los productos */
+    height: 200px; /* alto de las fotos */
+    border-radius: 5px; /* le redondea las esquinas a la foto por dentro */
+    object-fit: cover; /* esto es para que la foto no se vea aplastada */
+}
+
+.caja-foto p {
+    font-weight: bold; /* la pone como en negrilla */
+    color: #003366; /* color del texto debajo de la foto */
+}
+
+
+/* --- ESTILOS DEL CATALOGO (NUEVO - PAGINA PRODUCTOS) --- */
+.catalogo {
+    text-align: center; /* esto mueve todas las tarjetas al centro */
+    padding: 10px;
+}
+
+.tarjeta-producto {
+    display: inline-block; /* esto pone las tarjetas una al lado de la otra */
+    width: 250px; /* ancho fijo para que todos los cuadros sean del mismo tamaño */
+    margin: 15px; /* con esto es para que no pegue con otras cajas */
+    background-color: #ffffff; /* color de fondo blanco */
+    padding: 20px;
+    border-radius: 15px; /* aqui se redondea las esquinas */
+    border: 2px solid #061320; /* dibuja un marco azul oscuro alrededor */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* con este le agregamos sombra */
+    transition: 0.3s; /* esto hace que la animacion sea suave */
+}
+
+.tarjeta-producto:hover {
+    transform: scale(1.05); /* con este la tarjeta crece un poquito al pasar el cursor */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* la sombra se hace mas oscura */
+}
+
+.tarjeta-producto img {
+    width: 100%; /* hace que la foto ocupe todo el ancho de su tarjeta */
+    height: 220px; /* altura fija para las fotos */
+    border-radius: 10px; /* redondea la foto por dentro */
+    object-fit: contain; /* esto es para que la foto no se estire feo */
+}
+
+.tarjeta-producto h3 {
+    color: #061320; /* color azul oscuro */
+    margin-top: 15px;
+}
+
+.precio {
+    color: #10a9f6; /* color celeste llamativo que combina con el menu */
+    font-size: 24px; /* hace el numero mas grande */
+    font-weight: bold; /* la pone como en negrilla para que resalte */
+}
+
+
+/* --- ESTILOS PARA LAS FUTURAS PAGINAS (TABLA Y FORMULARIO) --- */
+table {
+    border-collapse: collapse; /* este es para que se junten las lineas de la tabla */
+    width: 100%; /* hace que la tabla ocupe todo el ancho de la caja */
+}
+
+th, td {
+    border: 2px solid #003366; /* dibuja un marco alrededor de los cuadritos */
+    padding: 10px;
+    text-align: center; /* esto mueve el texto al centro */
+}
+
+th {
+    background-color: #e6f2ff; /* color de fondo de los titulos de la tabla */
+}
+
+input[type="text"], input[type="date"], select {
+    border: 2px solid #003366;
+    padding: 10px;
+    border-radius: 8px; /* redondeamos las cajas donde se escribe */
+}
+
+fieldset {
+    border: 2px solid #10a9f6;
+    border-radius: 10px; /* redondeamos el recuadro del formulario */
+}
+
+.super-boton {
+    background-color: #10a9f6; /* color celeste de fondo */
+    color: #ffffff; /* letra blanca */
+    padding: 10px 20px; /* lo hace mas gordito */
+    border-radius: 8px; /* aqui se redondea las esquinas */
+    font-weight: bold; /* en negrilla */
+    cursor: pointer; /* esto hace que salga la manito al pasar el mouse */
+    border: none; /* quitamos borde por defecto */
+}
+
+.super-boton:hover {
+    background-color: #061320; /* cambia de color a azul oscuro al pasar el mouse */
+}
+
+/* --- EL SOTANO DE LA PAGINA --- */
+footer {
+    background-color: #333333; /* color gris oscuro para el sotano */
+    color: #ffffff; /* letra blanca */
+    text-align: center; /* esto mueve el texto al centro */
+    padding: 15px;
+}
