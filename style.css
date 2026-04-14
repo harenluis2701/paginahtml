@@ -127,20 +127,10 @@ img[alt="Banner de tecnología"] {
 
 
 /* --- ESTILOS PARA LAS FUTURAS PAGINAS (TABLA Y FORMULARIO) --- */
-table {
-    border-collapse: collapse; /* este es para que se junten las lineas de la tabla */
-    width: 100%; /* hace que la tabla ocupe todo el ancho de la caja */
-}
 
-th, td {
-    border: 2px solid #003366; /* dibuja un marco alrededor de los cuadritos */
-    padding: 10px;
-    text-align: center; /* esto mueve el texto al centro */
-}
 
-th {
-    background-color: #e6f2ff; /* color de fondo de los titulos de la tabla */
-}
+
+
 
 input[type="text"], input[type="date"], select {
     border: 2px solid #003366;
