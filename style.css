@@ -99,6 +99,7 @@ img[alt="Banner de tecnología"] {
     border: 2px solid #061320; /* dibuja un marco azul oscuro alrededor */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* con este le agregamos sombra */
     transition: 0.3s; /* esto hace que la animacion sea suave */
+    cursor: pointer;
 }
 
 .tarjeta-producto:hover {
